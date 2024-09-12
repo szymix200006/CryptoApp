@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Neucha&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap'); 
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish';
+}
+
+.app-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header-nav {
+  display: flex;
+  height: 15%;
+  background-color: white;
+  width: 80%;
+  padding-inline: 10%;
+  box-shadow: 0px 0px 5px grey;
+  align-items: center;
+  justify-content: end;
+  gap: 5%;
+  position: relative;
+}
+
+.header-logo-picture {
+  height: 140px;
+}
+
+.header-profile-picture {
+  height: 60px;
+  border-radius: 90px;
+}
+
+.header-logo-picture-wrapper {
+  margin-right: auto;
+}
+
+.theme-checkbox {
+  display: none;
+}
+
+.error-page {
+  width: 100%;
+  height: 85%;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.error-page-header {
+  font-size: 3em;
+}
+
+.error-page-info {
+  font-size: 1.2em;
+  color: grey;
+}
+
+.home-page {
+  width: 100%;
+  height: 85%;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.crypto-carousel-container {
+  margin: 5%;
+  width: 75%;
+  padding: 2.5% 5%;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px grey;
+  height: 50%;
+  display: inherit;
+  flex-direction: column;
+  gap: 10%;
+}
+
+.crypto-carousel-box {
+  height: 75%;
+  display: flex;
+  flex-grow: 1;
+  gap: 5%;
+}
+
+.crypto-carousel-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+  margin: 2%;
+}
+
+.crypto-carousel-card-picture {
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px grey;
+}
+
+.crypto-carousel-card-header {
+  font-size: 1em;
+  margin: 4%;
+}
+
+.crypto-carousel-card-info {
+  margin: 5%;
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+
+.carousel-wrapper {
+  height: 100%;
+  padding-top: 1.3%;
+}
+
+.crypto-list-container {
+  width: 85%;
+  display: inherit;
+  flex-direction: column; 
+}
+
+.crypto-list-card-image {
+  height: 50px;
+}
+
+.crypto-list-header {
+  width: 90%;
+  font-size: 2.5em;
+}
+
+.crypto-list-desc {
+  width: 96%;
+  padding: 1% 2%;
+  display: inherit;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 0 5px grey;
+  background-color: rgb(197, 19, 197);
+  color: white;
+  margin-top: 2%;
+}
+
+.crypto-list-wrapper {
+  width: 100%;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.crypto-list-card-container {
+  width: 96%;
+  padding: 2%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  box-shadow: 0 0 5px grey;
+  border-radius: 15px;
+  justify-content: space-between;
+  margin-top: 1%;;
+}
+
+.crypto-list-card-container-wrapper {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.crypto-list-card-name {
+  font-size: 1.5em;
+}
+
+.crypto-list-card-price {
+  font-size: 1.2em;
+  width: 10%;
+}
+
+.crypto-list-navigation-wrapper {
+  width: 100%;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.crypto-list-navigation-button {
+  padding: 10px;
+  width: 3%;
+  background-color: white;
+  border: 1px solid rgb(197, 19, 197);
+  color: rgb(197, 19, 197);
+  transition: .25s;
+}
+
+.crypto-list-navigation-button:hover {
+ background-color:rgb(197, 19, 197);
+ color: white;
+}
+
+.crypto-list-navigation-button:disabled {
+  border: 1px solid rgb(199, 115, 199);
+  color: rgb(199, 115, 199);
+}
+
+.crypto-list-navigation-button:disabled:hover {
+  background-color: white;
+}
+
+.crypto-list-card-header {
+  display: inherit;
+  gap: 10%;
+  width: 20%;
+}
+
+.crypto-list-card-text {
+  display: inherit;
+  flex-direction: column;
+}
+
+.crypto-list-card-name-short {
+  opacity: 0.8;
+}
+
+.overview-container {
+  height: 85%;
+  width: 100%;
+  display: flex;
+}
+
+.overview-crypto-social-info {
+  width: 30%;
+  height: 100%;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.crypto-header-container {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  height: 60%;
+  padding: 5%;
+}
+
+.crypto-header-image {
+  border-radius: 25px;
+  box-shadow: 0 0 15px grey;
+  width: 70%;
+}
+
+.crypto-header-name {
+  font-size: 2em;
+}
+
+.crypto-header-id {
+  font-size: 1.3em;
+  opacity: 0.7;
+}
+
+.crypto-social-item-wrapper {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  font-size: 1.5em;
+}
+
+.crypto-social-container {
+  width: 90%;
+  height: 30%;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10%;
+}
+
+.crypto-social-item-image {
+  color: rgb(197, 19, 197);
+  font-size: 1.5em;
+}
+
+.crypto-social-item-text {
+  color: black;
+  text-decoration: none;
+}
+
+.overview-crypto-prices-info {
+  width: 70%;
+  height: 100%;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.crypto-prices-container {
+  height: 10%;
+  display: inherit;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.crypto-prices-item {
+  font-size: 1.2em;
+}
+
+.crypto-chart-container {
+  width: 90%;
+  height: 80%;
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-box-container {
+  width: 100%;
+  height: 100%;
+  display: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  width: 100%;
+  height: 85%;
+  display: inherit;
+  background-image: url("./assets/login_background.jpg");
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login-header-container {
+  height: 20%;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+}
+
+.login-form-text {
+  font-size: 1.2em;
+  align-self: center;
+}
+
+.login-form-container {
+  background-color: white;
+  width: 20%;
+  height: 40%;
+  display: inherit;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px grey;
+  gap: 5%;
+}
+
+.signin-form-container {
+  background-color: white;
+  width: 20%;
+  height: 45%;
+  display: inherit;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px grey;
+  gap: 5%;
+}
+
+.login-form-button {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+}
+
+.login-form-button:hover {
+  background-color: rgb(197, 19, 197);
+  color: white;
+  transition: .6s;
+}
+
+.input-container {
+  display: inherit;
+  flex-direction: column;
+  height: 20%;
+  gap: 15%;
+  margin-bottom: 2.5%;
+}
+
+.input-label {
+  font-size: 0.85em;
+}
+
+.input-input {
+  border: 1px solid rgb(173, 173, 173);
+  padding: 10px;
+}
+
+
+
+.login-form-outer-link {
+  text-decoration: none;
+}
+
+.input-error {
+  color: red;
+  font-size: 0.75em;
+}
+
